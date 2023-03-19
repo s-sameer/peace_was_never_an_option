@@ -7,8 +7,8 @@ public class ObstacleSpawnScript : MonoBehaviour
     public GameObject obstacle;
     public float timer = 0;
     public float spawnRate = 1f;
-    public float minY = -2f;
-    public float maxY = 1.5f;
+    public float minY = -3.5f;
+    public float maxY = 7f;
 
     // Update is called once per frame
     void Update()
