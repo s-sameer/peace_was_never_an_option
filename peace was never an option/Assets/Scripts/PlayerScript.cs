@@ -8,8 +8,9 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D myRigidBody;
     public LogicScript logic;
     public Animator animator;
-    public float flapStrength=6;
+    public float flapStrength=7;
     public bool playerIsAlive = true;
+    public GameObject obstacle;
 
     void Start()
     {
@@ -29,6 +30,10 @@ public class PlayerScript : MonoBehaviour
             logic.gameOver();
             playerIsAlive = false;
         }
+        if(logic.score>1 && (int)logic.score % 50 == 0)
+        {
+            Time.timeScale += 0.002f;
+        }
     }
 
     public void move()
@@ -42,12 +47,14 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Collision with obstacle
         if (collision.gameObject.layer == 6)
         {
             playerIsAlive = false;
             logic.gameOver();
         }
 
+        // Collision with ground
         if (collision.gameObject.layer == 8)
         {
             animator.SetBool("touchingGround", true);

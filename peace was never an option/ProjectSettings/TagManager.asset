@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Logic
   - GameOver
+  - Event
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Obstacle
   - Coin
   - Ground
-  - 
+  - PowerUp
   - 
   - 
   - 

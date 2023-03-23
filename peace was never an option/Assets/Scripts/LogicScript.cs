@@ -12,6 +12,7 @@ public class LogicScript : MonoBehaviour
     public float score=0;
     public int coins = 0;
 
+
     public void increaseScore()
     {
         score = score + Time.deltaTime*3;
@@ -33,4 +34,5 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
+
 }

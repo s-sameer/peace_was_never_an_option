@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CoinScript : MonoBehaviour
 {
-    public float moveSpeed = 10;
+    public float moveSpeed = 9;
     public float deadZone = -12;
     public LogicScript logic;
 
@@ -40,5 +39,10 @@ public class CoinScript : MonoBehaviour
             logic.increaseCoins();
             Destroy(gameObject);
         }
+    }
+
+    public void Print()
+    {
+        Debug.Log("Working");
     }
 }
