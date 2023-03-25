@@ -9,6 +9,7 @@ TagManager:
   - GameOver
   - Event
   - Coin
+  - Plane
   layers:
   - Default
   - TransparentFX
