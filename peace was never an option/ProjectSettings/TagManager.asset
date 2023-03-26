@@ -21,7 +21,7 @@ TagManager:
   - Coin
   - Ground
   - PowerUp
-  - 
+  - StoreItem
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Customizations
+    uniqueID: 1011022551
     locked: 0
