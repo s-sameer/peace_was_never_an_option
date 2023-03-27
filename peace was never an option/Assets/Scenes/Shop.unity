@@ -789,21 +789,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &751133842
-Animation:
+--- !u!95 &751133842
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751133839}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5fc446d0b2dcf6e4790f01a787457c58, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a149aca464e38a429dbc664b76bc265, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1216068746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,8 +1483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951517b9a26f146aeadbbc6912980244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 1000
   CoinsTXT: {fileID: 1707903334}
+  coins: 0
+  logic: {fileID: 0}
 --- !u!4 &1466416778
 Transform:
   m_ObjectHideFlags: 0
@@ -1836,7 +1842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 563, y: -452.64}
+  m_AnchoredPosition: {x: 608, y: -551}
   m_SizeDelta: {x: 2196.06, y: 466.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1732540049

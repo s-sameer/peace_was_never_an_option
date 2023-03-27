@@ -35,4 +35,8 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
+    public int getCoins(){
+        return coins;
+    }
+
 }
