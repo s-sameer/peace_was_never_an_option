@@ -9,7 +9,7 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
     public Text coinText;
     public GameObject gameOverScreen;
-    public float score=0;
+    public float score = 0;
     public int coins = 0;
 
 
