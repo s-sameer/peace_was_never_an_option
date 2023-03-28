@@ -9,14 +9,14 @@ public class ButtonInfo : MonoBehaviour
     public Text PriceTxt;
     public Text PurchasedTxt;
     public GameObject ShopManager;
-    public CharacterCustomization CustomizeSprite;
+   //public CharacterCustomization CustomizeSprite;
 
 
 
     // Start is called before the first frame update
     void Start()
         {
-            CustomizeSprite = Object.FindObjectOfType<CharacterCustomization>();
+            //CustomizeSprite = Object.FindObjectOfType<CharacterCustomization>();
         }
 
 
@@ -25,7 +25,7 @@ public class ButtonInfo : MonoBehaviour
     {
         PriceTxt.text = "Price: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[2,ItemID].ToString();
         PurchasedTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3,ItemID].ToString();
-        CustomizeSprite.Update();
+        //CustomizeSprite.Update();
     }
 
 

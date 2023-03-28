@@ -12,8 +12,8 @@ public class ShopManagerScript : MonoBehaviour
     public Text CoinsTXT;
     public int coins;
     public LogicScript logic;
-    public int spriteNum;
-    public ButtonInfo UpdateSprite;
+    //public int spriteNum;
+    //public ButtonInfo UpdateSprite;
 
 
     /*
@@ -40,7 +40,7 @@ public class ShopManagerScript : MonoBehaviour
 
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         coins = logic.getCoins();
-        CoinsTXT.text = "Coins: " + coins.ToString();
+
 
         //IDs
         shopItems [1,1] =1;
@@ -62,12 +62,14 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,4] =0;
 
         //Sprites
+        /*
         shopItems[4,1] = 0;
         shopItems[4,2] = 1;
         shopItems[4,3] = 2;
         shopItems[4,4] = 3;
+        */
 
-        UpdateSprite = Object.FindObjectOfType<ButtonInfo>();
+        //UpdateSprite = Object.FindObjectOfType<ButtonInfo>();
     }
 
     
@@ -75,22 +77,22 @@ public class ShopManagerScript : MonoBehaviour
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
 
-        if (coins>= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID]){
+        if (coins>= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID] && coins>0 ){
             if (shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] == 0){
                 coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
                 CoinsTXT.text = "Coins: " + coins.ToString();
                 ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
-                spriteNum = shopItems[4, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-                UpdateSprite.Update();
+                //spriteNum = shopItems[4, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+                //UpdateSprite.Update();
             }
             
         }
 
     }
 
-   public int getSpriteNum(){
-    return spriteNum;
-}
+   //public int getSpriteNum(){
+   // return spriteNum;
+//}
 
 }

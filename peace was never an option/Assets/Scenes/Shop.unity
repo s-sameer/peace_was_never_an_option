@@ -710,7 +710,6 @@ GameObject:
   - component: {fileID: 751133840}
   - component: {fileID: 751133841}
   - component: {fileID: 751133842}
-  - component: {fileID: 751133843}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -810,29 +809,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &751133843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751133839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da66245a0b021463c8f3c7faeea3daf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumSprite: {fileID: 0}
-  spriteNum: 0
-  spriteList:
-  - {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  - {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  - {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  - {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
-  Goose: {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  KnifeGoose: {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  LumberjackGoose: {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  ShooterGoose: {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
 --- !u!1 &1216068746
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +822,6 @@ GameObject:
   - component: {fileID: 1216068750}
   - component: {fileID: 1216068749}
   - component: {fileID: 1216068748}
-  - component: {fileID: 1216068752}
   m_Layer: 10
   m_Name: Item3
   m_TagString: Untagged
@@ -893,7 +868,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 1256133207}
   PurchasedTxt: {fileID: 1505211110}
   ShopManager: {fileID: 1466416776}
-  CustomizeSprite: {fileID: 751133843}
 --- !u!114 &1216068749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,29 +962,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216068746}
   m_CullTransparentMesh: 1
---- !u!114 &1216068752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216068746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da66245a0b021463c8f3c7faeea3daf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumSprite: {fileID: 0}
-  spriteNum: 3
-  spriteList:
-  - {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  - {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  - {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  - {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
-  Goose: {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  KnifeGoose: {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  LumberjackGoose: {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  ShooterGoose: {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
 --- !u!1 &1256133205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1055,6 @@ GameObject:
   - component: {fileID: 1342083096}
   - component: {fileID: 1342083095}
   - component: {fileID: 1342083094}
-  - component: {fileID: 1342083098}
   m_Layer: 10
   m_Name: Item2
   m_TagString: Untagged
@@ -1151,7 +1101,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 515958157}
   PurchasedTxt: {fileID: 750721013}
   ShopManager: {fileID: 1466416776}
-  CustomizeSprite: {fileID: 751133843}
 --- !u!114 &1342083095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,29 +1195,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342083092}
   m_CullTransparentMesh: 1
---- !u!114 &1342083098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1342083092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da66245a0b021463c8f3c7faeea3daf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumSprite: {fileID: 0}
-  spriteNum: 2
-  spriteList:
-  - {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  - {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  - {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  - {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
-  Goose: {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  KnifeGoose: {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  LumberjackGoose: {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  ShooterGoose: {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
 --- !u!1 &1452795177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1208,6 @@ GameObject:
   - component: {fileID: 1452795180}
   - component: {fileID: 1452795179}
   - component: {fileID: 1452795182}
-  - component: {fileID: 1452795183}
   m_Layer: 5
   m_Name: Item1
   m_TagString: Untagged
@@ -1423,30 +1348,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 680731486}
   PurchasedTxt: {fileID: 1749106620}
   ShopManager: {fileID: 1466416776}
-  CustomizeSprite: {fileID: 751133843}
---- !u!114 &1452795183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452795177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da66245a0b021463c8f3c7faeea3daf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumSprite: {fileID: 0}
-  spriteNum: 1
-  spriteList:
-  - {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  - {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  - {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  - {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
-  Goose: {fileID: -399022140, guid: cf8a58a7d1c64ae43bc909fad1686027, type: 3}
-  KnifeGoose: {fileID: 2135099474, guid: 026e3b19b829b4d1492243a44bad7001, type: 3}
-  LumberjackGoose: {fileID: -1759832727, guid: 56e6f491e4fcf4e3093a43130f40a0ba, type: 3}
-  ShooterGoose: {fileID: 254845252, guid: fab76921481d647e0aef9eded73528d2, type: 3}
 --- !u!1 &1456453999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,7 +1393,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456453999}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2578d6c2e7f474de89cef3d6ff516165, type: 3}
   m_Name: 
@@ -1501,7 +1402,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
   ShopManager: {fileID: 0}
-  CustomizeSprite: {fileID: 0}
 --- !u!212 &1456454002
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1586,7 +1486,6 @@ MonoBehaviour:
   CoinsTXT: {fileID: 1707903334}
   coins: 0
   logic: {fileID: 0}
-  spriteNum: 0
 --- !u!4 &1466416778
 Transform:
   m_ObjectHideFlags: 0
@@ -1729,7 +1628,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517611068}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2578d6c2e7f474de89cef3d6ff516165, type: 3}
   m_Name: 
@@ -1738,7 +1637,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
   ShopManager: {fileID: 0}
-  CustomizeSprite: {fileID: 0}
 --- !u!212 &1517611071
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1992,7 +1890,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732540049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2578d6c2e7f474de89cef3d6ff516165, type: 3}
   m_Name: 
@@ -2001,7 +1899,6 @@ MonoBehaviour:
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
   ShopManager: {fileID: 0}
-  CustomizeSprite: {fileID: 0}
 --- !u!212 &1732540052
 SpriteRenderer:
   m_ObjectHideFlags: 0
