@@ -19,9 +19,9 @@ public class ShopManagerScript : MonoBehaviour
 
     void Start()
     {
-
-        logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
-        coins = logic.coins;
+        coins = PlayerPrefs.GetInt("coins");
+        //logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
+        //coins = logic.coins;
 
         //IDs
         shopItems [1,1] =1;
@@ -64,8 +64,7 @@ public class ShopManagerScript : MonoBehaviour
                 shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
                 CoinsTXT.text = "Coins: " + coins.ToString();
                 ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
-                //spriteNum = shopItems[4, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-                //UpdateSprite.Update();
+                PlayerPrefs.SetInt("coins",coins);
             }
             
         }
