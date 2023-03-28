@@ -10,7 +10,6 @@ public class PlayerScript : MonoBehaviour
     public Animator animator;
     public float flapStrength=7;
     public bool playerIsAlive = true;
-    public GameObject obstacle;
 
     void Start()
     {
