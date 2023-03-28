@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class ObstacleScript : MonoBehaviour
 {
     public float moveSpeed = 9;
-    public float deadZone = -12;
+    public float deadZone = -16;
 
     // Update is called once per frame
     void Update()

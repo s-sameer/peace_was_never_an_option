@@ -8,6 +8,7 @@ public class LogicScript : MonoBehaviour
 {
     public Text scoreText;
     public Text coinText;
+    public Text totalCoinText;
     public GameObject gameOverScreen;
     public float score = 0;
     public int coins = 0;
@@ -33,6 +34,9 @@ public class LogicScript : MonoBehaviour
     public void gameOver()
     {
         gameOverScreen.SetActive(true);
+        int totalCoins = PlayerPrefs.GetInt("coins");
+        PlayerPrefs.SetInt("coins", totalCoins + coins);
+        totalCoinText.text = PlayerPrefs.GetInt("coins").ToString();
     }
 
     public void MainMenu()

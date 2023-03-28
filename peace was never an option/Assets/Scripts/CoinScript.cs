@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     public float moveSpeed = 9;
-    public float deadZone = -12;
+    public float deadZone = -16;
     public LogicScript logic;
 
     void Start()
