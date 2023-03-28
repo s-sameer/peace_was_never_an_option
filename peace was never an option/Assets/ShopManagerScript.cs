@@ -76,7 +76,7 @@ public class ShopManagerScript : MonoBehaviour
     public void Back()
     {
         Debug.Log("checking");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
 

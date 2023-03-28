@@ -35,4 +35,13 @@ public class LogicScript : MonoBehaviour
         gameOverScreen.SetActive(true);
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void Shop()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }
