@@ -13,7 +13,6 @@ public class LogicScript : MonoBehaviour
     public float score = 0;
     public int coins = 0;
 
-
     public void increaseScore()
     {
         score = score + Time.deltaTime*3;
