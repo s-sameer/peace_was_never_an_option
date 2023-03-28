@@ -340,7 +340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.000030517578}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0.000061035156}
   m_SizeDelta: {x: -0.00024414062, y: 0.00012207031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &99059310
@@ -1515,7 +1515,6 @@ GameObject:
   - component: {fileID: 1441720402}
   - component: {fileID: 1441720403}
   - component: {fileID: 1441720404}
-  - component: {fileID: 1441720405}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1674,29 +1673,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1441720405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1441720396}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da66245a0b021463c8f3c7faeea3daf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NumSprite: {fileID: 0}
-  spriteNum: 0
-  spriteList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Goose: {fileID: 0}
-  KnifeGoose: {fileID: 0}
-  LumberjackGoose: {fileID: 0}
-  ShooterGoose: {fileID: 0}
 --- !u!1 &1459495964
 GameObject:
   m_ObjectHideFlags: 0
