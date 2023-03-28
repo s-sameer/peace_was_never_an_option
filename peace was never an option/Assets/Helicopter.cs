@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class Helicopter : ObstacleScript
 {
-    public Animator animator;
+   // public Animator animator;
 }
