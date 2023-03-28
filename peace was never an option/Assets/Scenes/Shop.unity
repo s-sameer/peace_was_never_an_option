@@ -867,6 +867,7 @@ MonoBehaviour:
   ItemID: 3
   PriceTxt: {fileID: 1256133207}
   PurchasedTxt: {fileID: 1505211110}
+  CoinTxt: {fileID: 1707903334}
   ShopManager: {fileID: 1466416776}
 --- !u!114 &1216068749
 MonoBehaviour:
@@ -1100,6 +1101,7 @@ MonoBehaviour:
   ItemID: 2
   PriceTxt: {fileID: 515958157}
   PurchasedTxt: {fileID: 750721013}
+  CoinTxt: {fileID: 1707903334}
   ShopManager: {fileID: 1466416776}
 --- !u!114 &1342083095
 MonoBehaviour:
@@ -1347,6 +1349,7 @@ MonoBehaviour:
   ItemID: 1
   PriceTxt: {fileID: 680731486}
   PurchasedTxt: {fileID: 1749106620}
+  CoinTxt: {fileID: 1707903334}
   ShopManager: {fileID: 1466416776}
 --- !u!1 &1456453999
 GameObject:
@@ -1401,6 +1404,7 @@ MonoBehaviour:
   ItemID: 0
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
+  CoinTxt: {fileID: 0}
   ShopManager: {fileID: 0}
 --- !u!212 &1456454002
 SpriteRenderer:
@@ -1636,6 +1640,7 @@ MonoBehaviour:
   ItemID: 0
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
+  CoinTxt: {fileID: 0}
   ShopManager: {fileID: 0}
 --- !u!212 &1517611071
 SpriteRenderer:
@@ -1776,9 +1781,10 @@ GameObject:
   - component: {fileID: 1707903336}
   - component: {fileID: 1707903335}
   - component: {fileID: 1707903334}
+  - component: {fileID: 1707903337}
   m_Layer: 5
   m_Name: CoinTxt
-  m_TagString: Untagged
+  m_TagString: Logic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1845,6 +1851,23 @@ RectTransform:
   m_AnchoredPosition: {x: 608, y: -551}
   m_SizeDelta: {x: 2196.06, y: 466.07}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1707903337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707903333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b46810df523c80479251631a0ae3a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  coinText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  score: 0
+  coins: 0
 --- !u!1 &1732540049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1921,7 @@ MonoBehaviour:
   ItemID: 0
   PriceTxt: {fileID: 0}
   PurchasedTxt: {fileID: 0}
+  CoinTxt: {fileID: 0}
   ShopManager: {fileID: 0}
 --- !u!212 &1732540052
 SpriteRenderer:

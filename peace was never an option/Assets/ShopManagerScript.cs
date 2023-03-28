@@ -16,31 +16,11 @@ public class ShopManagerScript : MonoBehaviour
     //public ButtonInfo UpdateSprite;
 
 
-    /*
-    public Sprite[] spriteList = new Sprite[5];
-    public Sprite Goose;
-    public Sprite KnifeGoose;
-    public Sprite LumberjackGoose;
-    public Sprite ShooterGoose;
-    */
-
-    
-
-
     void Start()
     {
 
-        //Sprites
-        /*spriteList[0] = Goose;
-        spriteList[1] = KnifeGoose;
-        spriteList[2] = LumberjackGoose;
-        spriteList[3] = ShooterGoose;
-        */
-
-
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        coins = logic.getCoins();
-
+        logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
+        coins = logic.coins;
 
         //IDs
         shopItems [1,1] =1;

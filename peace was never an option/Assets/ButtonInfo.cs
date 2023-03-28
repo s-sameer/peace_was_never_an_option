@@ -8,6 +8,7 @@ public class ButtonInfo : MonoBehaviour
     public int ItemID;
     public Text PriceTxt;
     public Text PurchasedTxt;
+    public Text CoinTxt;
     public GameObject ShopManager;
    //public CharacterCustomization CustomizeSprite;
 
@@ -25,6 +26,7 @@ public class ButtonInfo : MonoBehaviour
     {
         PriceTxt.text = "Price: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[2,ItemID].ToString();
         PurchasedTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3,ItemID].ToString();
+        CoinTxt.text = "Coins: " + ShopManager.GetComponent<ShopManagerScript>().coins.ToString();
         //CustomizeSprite.Update();
     }
 
