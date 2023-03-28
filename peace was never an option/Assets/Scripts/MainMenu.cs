@@ -12,4 +12,8 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Shop()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
 }
