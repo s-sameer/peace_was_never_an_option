@@ -11,7 +11,12 @@ public class FlyHigher : PowerUpEffect
         script.flapStrength = 10;
         GetComponent<SpriteRenderer>().enabled = false;
 
-        yield return new WaitForSeconds(powerupDuration);
+        float elapsed = 0f;
+        while (elapsed < powerupDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
 
         script.flapStrength = 7;
         powerActivated = false;
