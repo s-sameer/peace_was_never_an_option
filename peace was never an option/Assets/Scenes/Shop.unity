@@ -1625,7 +1625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CoinsTXT: {fileID: 1707903334}
   coins: 0
-  logic: {fileID: 0}
+  PurchasedKey: 
 --- !u!4 &1466416778
 Transform:
   m_ObjectHideFlags: 0
@@ -2135,6 +2135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   coinText: {fileID: 0}
+  totalCoinText: {fileID: 0}
   gameOverScreen: {fileID: 0}
   score: 0
   coins: 0

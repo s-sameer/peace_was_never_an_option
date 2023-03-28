@@ -12,16 +12,16 @@ public class ShopManagerScript : MonoBehaviour
     
     public Text CoinsTXT;
     public int coins;
-    public LogicScript logic;
+    //public int chosenItemID;
+    public string PurchasedKey;
     //public int spriteNum;
     //public ButtonInfo UpdateSprite;
 
 
     void Start()
     {
-
-        logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
-        coins = logic.coins;
+        coins = PlayerPrefs.GetInt("coins");
+        //chosenItemID = 0;
 
         //IDs
         shopItems [1,1] =1;
@@ -42,6 +42,13 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,3] =0;
         shopItems [3,4] =0;
 
+
+        for (int i = 1; i < shopItems.GetLength(1); i++) {
+           string key = "shopItem_" + i;
+           PlayerPrefs.SetInt(key, shopItems[3, i]);
+        }
+
+
         //Sprites
         /*
         shopItems[4,1] = 0;
@@ -50,24 +57,32 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[4,4] = 3;
         */
 
-        //UpdateSprite = Object.FindObjectOfType<ButtonInfo>();
+
     }
 
-    
+
     public void Buy()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
+        PurchasedKey = "shopItem_" + ButtonRef.GetComponent<ButtonInfo>().ItemID;
 
         if (coins>= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID] && coins>0 ){
-            if (shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] == 0){
+            if (PlayerPrefs.GetInt(PurchasedKey) == 0)
+            //shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] == 0)
+            {
                 coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
                 CoinsTXT.text = "Coins: " + coins.ToString();
-                ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
-                //spriteNum = shopItems[4, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-                //UpdateSprite.Update();
+                //chosenItemID = ButtonRef.GetComponent<ButtonInfo>().ItemID;
+
+
+                PlayerPrefs.SetInt(PurchasedKey, shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]);
+
+                //ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+                //PurchasedTxt.text = PlayerPrefs.GetInt(PurchasedKey);
+                PlayerPrefs.SetInt("coins",coins);
             }
-            
+
         }
 
     }
@@ -79,9 +94,5 @@ public class ShopManagerScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
-
-    //public int getSpriteNum(){
-    // return spriteNum;
-    //}
-
 }
+
