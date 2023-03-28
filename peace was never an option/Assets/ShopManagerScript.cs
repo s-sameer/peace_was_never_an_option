@@ -12,12 +12,32 @@ public class ShopManagerScript : MonoBehaviour
     public Text CoinsTXT;
     public int coins;
     public LogicScript logic;
+    public int spriteNum;
+    public ButtonInfo UpdateSprite;
 
 
+    /*
+    public Sprite[] spriteList = new Sprite[5];
+    public Sprite Goose;
+    public Sprite KnifeGoose;
+    public Sprite LumberjackGoose;
+    public Sprite ShooterGoose;
+    */
+
+    
 
 
     void Start()
     {
+
+        //Sprites
+        /*spriteList[0] = Goose;
+        spriteList[1] = KnifeGoose;
+        spriteList[2] = LumberjackGoose;
+        spriteList[3] = ShooterGoose;
+        */
+
+
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
         coins = logic.getCoins();
         CoinsTXT.text = "Coins: " + coins.ToString();
@@ -41,7 +61,13 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,3] =0;
         shopItems [3,4] =0;
 
+        //Sprites
+        shopItems[4,1] = 0;
+        shopItems[4,2] = 1;
+        shopItems[4,3] = 2;
+        shopItems[4,4] = 3;
 
+        UpdateSprite = Object.FindObjectOfType<ButtonInfo>();
     }
 
     
@@ -55,9 +81,16 @@ public class ShopManagerScript : MonoBehaviour
                 shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
                 CoinsTXT.text = "Coins: " + coins.ToString();
                 ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+                spriteNum = shopItems[4, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+                UpdateSprite.Update();
             }
             
         }
 
     }
+
+   public int getSpriteNum(){
+    return spriteNum;
+}
+
 }
