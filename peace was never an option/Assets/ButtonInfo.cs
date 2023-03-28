@@ -30,7 +30,7 @@ public class ButtonInfo : MonoBehaviour
         //PlayerPrefs.SetInt("Item4", ShopManager.GetComponent<ShopManagerScript>().shopItems[3,4]);
 
 
-        PriceTxt.text = "Price: " + PlayerPrefs.GetInt("Item"+  GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObjectGetComponent<ButtonInfo>().ItemID.ToString());
+        //PriceTxt.text = "Price: " + PlayerPrefs.GetInt("Item"+  GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObjectGetComponent<ButtonInfo>().ItemID.ToString());
 
         PurchasedTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3,ItemID].ToString();
         //PurchasedTxt.text = PlayerPrefs.getInt(PurchasedKey);
