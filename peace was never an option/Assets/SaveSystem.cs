@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public class SaveSystem : MonoBehaviour
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+public static class SaveSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public static void saveCoins(LogicScript logic)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/data.ds";
+        FileStream stream = new FileStream(path, FileMode.Create);
     }
 }

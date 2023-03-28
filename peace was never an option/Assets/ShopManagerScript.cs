@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ShopManagerScript : MonoBehaviour
 {
@@ -71,8 +72,16 @@ public class ShopManagerScript : MonoBehaviour
 
     }
 
-   //public int getSpriteNum(){
-   // return spriteNum;
-//}
+    //to move back to main screen
+    public void Back()
+    {
+        Debug.Log("checking");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+
+    //public int getSpriteNum(){
+    // return spriteNum;
+    //}
 
 }
