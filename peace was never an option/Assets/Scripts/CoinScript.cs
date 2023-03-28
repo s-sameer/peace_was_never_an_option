@@ -36,8 +36,12 @@ public class CoinScript : MonoBehaviour
     {
         if (collision.gameObject.layer == 3)
         {
-            logic.increaseCoins();
-            Destroy(gameObject);
+            bool isAlive = collision.gameObject.GetComponent<PlayerScript>().playerIsAlive;
+            if (isAlive)
+            {
+                logic.increaseCoins();
+                Destroy(gameObject);
+            }
         }
     }
 
