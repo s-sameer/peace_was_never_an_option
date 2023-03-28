@@ -9,6 +9,14 @@ public class ObstacleSpawnScript : MonoBehaviour
     public float spawnRate = 1f;
     public float minY = -3.5f;
     public float maxY = 7f;
+    public GameObject[] obstaclesToSpawn;
+
+    void Start()
+    {
+        obstaclesToSpawn = new GameObject[2];
+        obstaclesToSpawn[0] = Resources.Load<GameObject>("Spike");
+        obstaclesToSpawn[1] = Resources.Load<GameObject>("Helicopter");
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,7 +32,9 @@ public class ObstacleSpawnScript : MonoBehaviour
             timer = timer + Time.deltaTime;
         } else
         {
-            Instantiate(obstacle, new Vector3(transform.position.x, y, 0), transform.rotation);
+            int index = Random.Range(0, obstaclesToSpawn.Length);
+            GameObject obstacleToSpawn = obstaclesToSpawn[index];
+            Instantiate(obstacleToSpawn, new Vector3(transform.position.x, y, 0), transform.rotation);
             timer = 0;
             spawnRate = Random.Range(0.5f, 1.5f);
         }

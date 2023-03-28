@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2775019431672524210}
   - component: {fileID: 2775019431672524209}
   - component: {fileID: 2775019431672524208}
-  - component: {fileID: 2775019431672524211}
+  - component: {fileID: 4514835013876910177}
   m_Layer: 6
-  m_Name: Obstacle
+  m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: 0.005, y: -0.01}
   serializedVersion: 2
   m_Radius: 0.11
---- !u!114 &2775019431672524211
+--- !u!114 &4514835013876910177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +111,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2775019431672524215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e92f45fde276384e959d496090c99d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 18b7316020eb0484890fd332eb8f69fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 9
-  deadZone: -12
-  logic: {fileID: 0}
