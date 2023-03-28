@@ -12,7 +12,10 @@ public class ShopManagerScript : MonoBehaviour
     
     public Text CoinsTXT;
     public int coins;
-    public LogicScript logic;
+    //public int Item1;
+    //public int Item2;
+    //public int Item3;
+    //public int Item4;
     //public int spriteNum;
     //public ButtonInfo UpdateSprite;
 
@@ -20,8 +23,11 @@ public class ShopManagerScript : MonoBehaviour
     void Start()
     {
         coins = PlayerPrefs.GetInt("coins");
-        //logic = GameObject.FindWithTag("Logic").GetComponent<LogicScript>();
-        //coins = logic.coins;
+
+        //Item1 = 0;
+        //Item2 = 0;
+        //Item3 = 0;
+        //Item4 = 0;
 
         //IDs
         shopItems [1,1] =1;
@@ -42,6 +48,16 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,3] =0;
         shopItems [3,4] =0;
 
+        /*
+         for (int i = 0; i < shopItems.GetLength(0); i++) {
+            string key = "shopItem_" + j;
+            PlayerPrefs.SetInt(key, shopItems[3, j]);
+         }
+         */
+
+
+
+
         //Sprites
         /*
         shopItems[4,1] = 0;
@@ -50,7 +66,7 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[4,4] = 3;
         */
 
-        //UpdateSprite = Object.FindObjectOfType<ButtonInfo>();
+
     }
 
     
@@ -63,7 +79,12 @@ public class ShopManagerScript : MonoBehaviour
                 coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
                 shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
                 CoinsTXT.text = "Coins: " + coins.ToString();
+
+                //string PurchasedKey = "shopItem_" + ButtonRef.GetComponent<ButtonInfo>().ItemID;
+               // PlayerPrefs.SetInt(PurchasedKey, ButtonRef.GetComponent<ButtonInfo>().ItemID);
+
                 ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+                //PurchasedTxt.text = PlayerPrefs.getInt(PurchasedKey);
                 PlayerPrefs.SetInt("coins",coins);
             }
             
@@ -77,10 +98,5 @@ public class ShopManagerScript : MonoBehaviour
         Debug.Log("checking");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
-
-
-    //public int getSpriteNum(){
-    // return spriteNum;
-    //}
 
 }
