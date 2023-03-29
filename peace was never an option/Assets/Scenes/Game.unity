@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 669243307}
   coinText: {fileID: 974171656}
+  totalCoinText: {fileID: 0}
   gameOverScreen: {fileID: 99059307}
   score: 0
   coins: 0
@@ -319,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &99059308
 RectTransform:
   m_ObjectHideFlags: 0
