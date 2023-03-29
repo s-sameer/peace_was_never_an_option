@@ -19,7 +19,8 @@ How to build and run an executable version of the application:
 -   Feel free to challenge yourself to go as far as you can and have fun :)
 
 
-Note: There will also be attached a compiled version of the game. To begin this game, double click on the file. 
+Note: There will also be attached a compiled version of the game in case you cannot compile it yourself. 
+To begin this game, double click on the file. 
 
 There are no additional assets or components as they are all stored within the zip file. 
 To find the source code of our application, open the zip file, go to the Assets folder, and then open Scripts. 
