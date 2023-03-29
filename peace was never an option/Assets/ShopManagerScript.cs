@@ -9,7 +9,8 @@ public class ShopManagerScript : MonoBehaviour
 {
     
     public int[,] shopItems = new int[5,5];
-    
+
+
     public Text CoinsTXT;
     public int coins;
     //public int chosenItemID;
@@ -17,9 +18,18 @@ public class ShopManagerScript : MonoBehaviour
     //public int spriteNum;
     //public ButtonInfo UpdateSprite;
 
+    Dictionary<int, int> purchasedItems = new Dictionary<int, int>();
 
     void Start()
     {
+        // Load the purchased values of each item from player preferences into the dictionary
+        for (int i = 1; i < shopItems.GetLength(1); i++)
+        {
+            string key = "shopItem_" + i;
+            int purchasedValue = PlayerPrefs.GetInt(key);
+            purchasedItems.Add(i, purchasedValue);
+        }
+
         coins = PlayerPrefs.GetInt("coins");
         //chosenItemID = 0;
 
@@ -43,11 +53,6 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,4] =0;
 
 
-        for (int i = 1; i < shopItems.GetLength(1); i++) {
-           string key = "shopItem_" + i;
-           PlayerPrefs.SetInt(key, shopItems[3, i]);
-        }
-
 
         //Sprites
         /*
@@ -64,28 +69,26 @@ public class ShopManagerScript : MonoBehaviour
     public void Buy()
     {
         GameObject ButtonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        PurchasedKey = "shopItem_" + ButtonRef.GetComponent<ButtonInfo>().ItemID;
+        int itemID = ButtonRef.GetComponent<ButtonInfo>().ItemID;
+        int itemPrice = shopItems[2, itemID];
 
-        if (coins>= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID] && coins>0 ){
-            if (PlayerPrefs.GetInt(PurchasedKey) == 0)
-            //shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID] == 0)
+        // Check if the player has enough coins to buy the item
+        if (coins >= itemPrice && coins > 0)
+        {
+            // Check if the item has not been purchased before
+            if (!purchasedItems.ContainsKey(itemID) || purchasedItems[itemID] == 0)
             {
-                coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
-                shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
+                coins -= itemPrice;
                 CoinsTXT.text = "Coins: " + coins.ToString();
-                //chosenItemID = ButtonRef.GetComponent<ButtonInfo>().ItemID;
+                purchasedItems[itemID] = 1; // Mark the item as purchased
+                PlayerPrefs.SetInt("coins", coins); // Save the updated coin balance
 
-
-                PlayerPrefs.SetInt(PurchasedKey, shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]);
-
-                //ButtonRef.GetComponent<ButtonInfo>().PurchasedTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
-                //PurchasedTxt.text = PlayerPrefs.GetInt(PurchasedKey);
-                PlayerPrefs.SetInt("coins",coins);
+                // Save the purchased value of the item to player preferences
+                PlayerPrefs.SetInt("shopItem_" + itemID, 1);
             }
-
         }
-
     }
+
 
     //to move back to main screen
     public void Back()
