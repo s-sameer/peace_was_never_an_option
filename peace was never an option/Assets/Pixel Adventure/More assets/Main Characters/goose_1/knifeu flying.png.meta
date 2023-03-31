@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 026e3b19b829b4d1492243a44bad7001
+guid: 160b89fcebd8a4951a2648e9e50c7e8f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knifue_0
+      name: goosefly_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,104 +125,104 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0b51d6406f134e6ab71146871dacfec
-      internalID: 2135099474
+      spriteID: c30f4d6b5d55a4bc785fa85d442572ed
+      internalID: 1649561182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knifeu_1
+      name: goosefly_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 31
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619433e0450a5495eb9b4fe3d8393efb
+      internalID: -67164223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knifeu flying_2
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 0
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3271204cfc3b4e91be81af096cce1eb
-      internalID: -243288910
+      spriteID: 9f470d0453ded4739ac5f522d500a18a
+      internalID: -1518339336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knifeu_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 0
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cef3d03159a2341fd8b25799316e226e
-      internalID: 1718037867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knifeu_3
+      name: goosefly__3
       rect:
         serializedVersion: 2
         x: 94
-        y: 1
-        width: 31
-        height: 31
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7713512f2434456d83ef710154f0298
-      internalID: -1862089035
+      spriteID: 13edcf6aaaab24f0da9d68d07da20175
+      internalID: -1586937255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knifeu_4
+      name: goosefly_4
       rect:
         serializedVersion: 2
         x: 127
         y: 0
-        width: 30
+        width: 29
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e54a2bcdac6f4292944155f6985953a
-      internalID: 172378921
+      spriteID: a225b3da24f6e4e4f8c18bb674e4c3a6
+      internalID: -721207708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knifeu_5
+      name: goosefly__5
       rect:
         serializedVersion: 2
         x: 157
@@ -230,14 +230,14 @@ TextureImporter:
         width: 35
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d36a148afb6445b8c7cd3f146b3869
-      internalID: 1341498222
+      spriteID: 03c8c3fe7b784400f9cbeb7977bb34c9
+      internalID: 166184003
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knifeu_1: -243288910
-      knifeu_2: 1718037867
-      knifeu_3: -1862089035
-      knifeu_4: 172378921
-      knifeu_5: 1341498222
-      knifue_0: 2135099474
+      goosefly_0: 1649561182
+      goosefly_1: -67164223
+      goosefly_4: -721207708
+      goosefly__3: -1586937255
+      goosefly__5: 166184003
+      knifeu flying_2: -1518339336
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

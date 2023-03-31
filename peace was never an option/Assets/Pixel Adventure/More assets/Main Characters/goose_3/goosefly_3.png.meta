@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56e6f491e4fcf4e3093a43130f40a0ba
+guid: ac32a0467baca40e5b9827538762f9d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,127 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lumberjack goose_0
+      name: goosefly_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88a37585c2eb41618fdfd4ab3e2b116
-      internalID: -1759832727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lumberjack goose_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a413c5190f8484a60855d945cc19d991
-      internalID: 1290606926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lumberjack goose_2
-      rect:
-        serializedVersion: 2
-        x: 65
+        x: 0
         y: 0
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba27fef24a3f4be59a4cd00f0b8b245
-      internalID: -1762856184
+      spriteID: 7c9cd18aa55a0466ebed38b352fe1a6d
+      internalID: 1547506418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lumberjack goose_3
+      name: goosefly_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 32
         y: 0
-        width: 29
+        width: 31
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1dbee8232cbb495ca7bfa2355e61e37
-      internalID: -1373209208
+      spriteID: 0951d930d4f194a69a3d3778ca330dd9
+      internalID: -1919788100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lumberjack goose_4
+      name: goosefly_2
       rect:
         serializedVersion: 2
-        x: 129
+        x: 64
         y: 0
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 539871c3cece340f58b598dab658bc9c
-      internalID: -1998805401
+      spriteID: 9a30870431fa043f0baa85203161822c
+      internalID: 885123317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lumberjack goose_5
+      name: goosefly_3
       rect:
         serializedVersion: 2
-        x: 160
+        x: 93
+        y: 0
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e541bd47eefa242ef8b7de5e106d749e
+      internalID: 1023669850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goosefly_4
+      rect:
+        serializedVersion: 2
+        x: 127
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc9242d3638e4e09ac3310b8ffca501
-      internalID: 1330889432
+      spriteID: bc4447b71a5fa46bb9a609223bc90420
+      internalID: 1574520730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goosefly_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c6e5eac890d4c61975b63e06e83b14
+      internalID: -2041597998
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lumberjack goose_0: -1759832727
-      lumberjack goose_1: 1290606926
-      lumberjack goose_2: -1762856184
-      lumberjack goose_3: -1373209208
-      lumberjack goose_4: -1998805401
-      lumberjack goose_5: 1330889432
+      goosefly_0: 1547506418
+      goosefly_1: -1919788100
+      goosefly_2: 885123317
+      goosefly_3: 1023669850
+      goosefly_4: 1574520730
+      goosefly_5: -2041597998
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

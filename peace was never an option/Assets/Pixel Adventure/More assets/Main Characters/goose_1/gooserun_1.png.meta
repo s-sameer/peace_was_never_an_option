@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac32a0467baca40e5b9827538762f9d7
+guid: 026e3b19b829b4d1492243a44bad7001
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: school shooter goose flying_0
+      name: gooserun_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,119 +125,119 @@ TextureImporter:
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c9cd18aa55a0466ebed38b352fe1a6d
-      internalID: 1547506418
+      spriteID: b0b51d6406f134e6ab71146871dacfec
+      internalID: 2135099474
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: school shooter goose flying_1
+      name: gooserun_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 0
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3271204cfc3b4e91be81af096cce1eb
+      internalID: -243288910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef3d03159a2341fd8b25799316e226e
+      internalID: 1718037867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
         width: 31
-        height: 32
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0951d930d4f194a69a3d3778ca330dd9
-      internalID: -1919788100
+      spriteID: a7713512f2434456d83ef710154f0298
+      internalID: -1862089035
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: school shooter goose flying_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a30870431fa043f0baa85203161822c
-      internalID: 885123317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: school shooter goose flying_3
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e541bd47eefa242ef8b7de5e106d749e
-      internalID: 1023669850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: school shooter goose flying_4
+      name: gooserun_4
       rect:
         serializedVersion: 2
         x: 127
         y: 0
-        width: 32
+        width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4447b71a5fa46bb9a609223bc90420
-      internalID: 1574520730
+      spriteID: 0e54a2bcdac6f4292944155f6985953a
+      internalID: 172378921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: school shooter goose flying_5
+      name: gooserun_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 157
         y: 0
-        width: 31
+        width: 35
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78c6e5eac890d4c61975b63e06e83b14
-      internalID: -2041597998
+      spriteID: 82d36a148afb6445b8c7cd3f146b3869
+      internalID: 1341498222
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      school shooter goose flying_0: 1547506418
-      school shooter goose flying_1: -1919788100
-      school shooter goose flying_2: 885123317
-      school shooter goose flying_3: 1023669850
-      school shooter goose flying_4: 1574520730
-      school shooter goose flying_5: -2041597998
+      gooserun_0: 2135099474
+      gooserun_1: -243288910
+      gooserun_2: 1718037867
+      gooserun_3: -1862089035
+      gooserun_4: 172378921
+      gooserun_5: 1341498222
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

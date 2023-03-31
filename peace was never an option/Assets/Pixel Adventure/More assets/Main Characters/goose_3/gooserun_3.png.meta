@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 160b89fcebd8a4951a2648e9e50c7e8f
+guid: fab76921481d647e0aef9eded73528d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,127 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knifeu flying_0
+      name: gooserun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c30f4d6b5d55a4bc785fa85d442572ed
-      internalID: 1649561182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knifeu flying_1
-      rect:
-        serializedVersion: 2
-        x: 31
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 619433e0450a5495eb9b4fe3d8393efb
-      internalID: -67164223
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knifeu flying_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
         width: 28
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f470d0453ded4739ac5f522d500a18a
-      internalID: -1518339336
+      spriteID: 689acebb1eaca4fa9a9237fb68c98359
+      internalID: 254845252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knifeu flying_3
+      name: gooserun_1
       rect:
         serializedVersion: 2
-        x: 94
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13edcf6aaaab24f0da9d68d07da20175
-      internalID: -1586937255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knifeu flying_4
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 0
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a225b3da24f6e4e4f8c18bb674e4c3a6
-      internalID: -721207708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knifeu flying_5
-      rect:
-        serializedVersion: 2
-        x: 157
+        x: 28
         y: 0
         width: 35
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03c8c3fe7b784400f9cbeb7977bb34c9
-      internalID: 166184003
+      spriteID: b4fb48e6ae7de444eb83d172e30dbf71
+      internalID: -1169133971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a55e6f6c7ee34348ab893577f06ee68
+      internalID: -1849399637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705512399947e4741a9776d838212cbe
+      internalID: -2101450820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2a878e966284c2593e899fc0e56980
+      internalID: -516503508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gooserun_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fe194cf1f594c189aaff9e63acfe85
+      internalID: -603590040
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knifeu flying_0: 1649561182
-      knifeu flying_1: -67164223
-      knifeu flying_2: -1518339336
-      knifeu flying_3: -1586937255
-      knifeu flying_4: -721207708
-      knifeu flying_5: 166184003
+      gooserun_0: 254845252
+      gooserun_1: -1169133971
+      gooserun_2: -1849399637
+      gooserun_3: -2101450820
+      gooserun_4: -516503508
+      gooserun_5: -603590040
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

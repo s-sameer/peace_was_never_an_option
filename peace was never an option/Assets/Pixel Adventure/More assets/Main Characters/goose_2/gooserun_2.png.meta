@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd72f9878e6324049bd275710c298833
+guid: 56e6f491e4fcf4e3093a43130f40a0ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,112 +117,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jump_0
+      name: gooserun_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 32
+        width: 29
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a1bf1982ec96b14f9431debfbde7f91
-      internalID: -924467653
+      spriteID: a88a37585c2eb41618fdfd4ab3e2b116
+      internalID: -1759832727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_1
+      name: gooserun_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 32
+        width: 29
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b1443e805270343bd768a32d563624
-      internalID: -1957843288
+      spriteID: a413c5190f8484a60855d945cc19d991
+      internalID: 1290606926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_2
+      name: gooserun_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 0
-        width: 32
+        width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da8127350f06f14c8a97d6a462fc349
-      internalID: -2115165142
+      spriteID: cba27fef24a3f4be59a4cd00f0b8b245
+      internalID: -1762856184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_3
+      name: gooserun_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 32
+        width: 29
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 948da2588e57db5428d10f1b713e5c0f
-      internalID: 179817832
+      spriteID: a1dbee8232cbb495ca7bfa2355e61e37
+      internalID: -1373209208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_4
+      name: gooserun_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 0
-        width: 32
+        width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3915b3a91e1184c46af2d4299dcbfbf2
-      internalID: 1976570241
+      spriteID: 539871c3cece340f58b598dab658bc9c
+      internalID: -1998805401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jump_5
+      name: gooserun_5
       rect:
         serializedVersion: 2
         x: 160
@@ -230,14 +230,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88b91997886398c49a954c24505c8df2
-      internalID: -2028541392
+      spriteID: 6cc9242d3638e4e09ac3310b8ffca501
+      internalID: 1330889432
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Jump_0: -924467653
-      Jump_1: -1957843288
-      Jump_2: -2115165142
-      Jump_3: 179817832
-      Jump_4: 1976570241
-      Jump_5: -2028541392
+      gooserun_0: -1759832727
+      gooserun_1: 1290606926
+      gooserun_2: -1762856184
+      gooserun_3: -1373209208
+      gooserun_4: -1998805401
+      gooserun_5: 1330889432
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
