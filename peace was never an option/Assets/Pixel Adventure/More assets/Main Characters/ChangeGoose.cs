@@ -6,6 +6,7 @@ public class ChangeGoose : MonoBehaviour
     public AnimatorOverrideController goose_1;
     public AnimatorOverrideController goose_2;
     public AnimatorOverrideController goose_3;
+    public AnimatorOverrideController goose_4;
 
     private AnimatorOverrideController currentGoose;
 
@@ -23,6 +24,11 @@ public class ChangeGoose : MonoBehaviour
             case 3:
                 currentGoose = goose_3;
                 break;
+
+            case 4:
+                currentGoose = goose_4;
+                break;
+
             default:
                 currentGoose = goose_1;
                 break;
@@ -50,4 +56,12 @@ public class ChangeGoose : MonoBehaviour
         GetComponent<Animator>().runtimeAnimatorController = currentGoose;
         PlayerPrefs.SetInt("gooseIndex", 3);
     }
+
+    public void Goose_4()
+    {
+        currentGoose = goose_4;
+        GetComponent<Animator>().runtimeAnimatorController = currentGoose;
+        PlayerPrefs.SetInt("gooseIndex", 4);
+    }
+    
 }

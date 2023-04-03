@@ -7,6 +7,7 @@ MonoImporter:
   - goose_1: {fileID: 22100000, guid: 713b196beff9e49a6a3e280e9c108159, type: 2}
   - goose_2: {fileID: 22100000, guid: 87da36029f5124d7897cad43c882c50c, type: 2}
   - goose_3: {fileID: 22100000, guid: 3469c0fa4a0bf4340a7623beffe5c3d3, type: 2}
+  - goose_4: {fileID: 22100000, guid: 7a6a8d03e14ac4c78bc151c78246a2ce, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
