@@ -49,8 +49,11 @@ public class PlayerScript : MonoBehaviour
         // Collision with obstacle
         if (collision.gameObject.layer == 6)
         {
+            if (playerIsAlive)
+            {
+                logic.gameOver();
+            }
             playerIsAlive = false;
-            logic.gameOver();
         }
 
         // Collision with ground
