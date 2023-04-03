@@ -40,10 +40,10 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [1,4] =4;
 
         //Price
-        shopItems [2,1] =5;
-        shopItems [2,2] =5;
-        shopItems [2,3] =5;
-        shopItems [2,4] =5;
+        shopItems [2,1] =20;
+        shopItems [2,2] =100;
+        shopItems [2,3] =50;
+        shopItems [2,4] =0;
 
 
         //Purchased
@@ -73,7 +73,7 @@ public class ShopManagerScript : MonoBehaviour
         int itemPrice = shopItems[2, itemID];
 
         // Check if the player has enough coins to buy the item
-        if (coins >= itemPrice && coins > 0)
+        if (coins >= itemPrice)
         {
             // Check if the item has not been purchased before
             if (!purchasedItems.ContainsKey(itemID) || purchasedItems[itemID] == 0)

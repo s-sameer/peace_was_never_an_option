@@ -12,7 +12,7 @@ public class ChangeGoose : MonoBehaviour
 
     void Start()
     {
-        int gooseIndex = PlayerPrefs.GetInt("gooseIndex", 1);
+        int gooseIndex = PlayerPrefs.GetInt("gooseIndex", 4);
         switch(gooseIndex)
         {
             case 1:
@@ -30,7 +30,7 @@ public class ChangeGoose : MonoBehaviour
                 break;
 
             default:
-                currentGoose = goose_1;
+                currentGoose = goose_4;
                 break;
         }
         GetComponent<Animator>().runtimeAnimatorController = currentGoose;
@@ -63,5 +63,5 @@ public class ChangeGoose : MonoBehaviour
         GetComponent<Animator>().runtimeAnimatorController = currentGoose;
         PlayerPrefs.SetInt("gooseIndex", 4);
     }
-    
+
 }
