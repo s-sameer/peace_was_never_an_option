@@ -10,13 +10,9 @@ public class ShopManagerScript : MonoBehaviour
     
     public int[,] shopItems = new int[5,5];
 
-
     public Text CoinsTXT;
     public int coins;
-    //public int chosenItemID;
     public string PurchasedKey;
-    //public int spriteNum;
-    //public ButtonInfo UpdateSprite;
 
     Dictionary<int, int> purchasedItems = new Dictionary<int, int>();
 
@@ -31,7 +27,6 @@ public class ShopManagerScript : MonoBehaviour
         }
 
         coins = PlayerPrefs.GetInt("coins");
-        //chosenItemID = 0;
 
         //IDs
         shopItems [1,1] =1;
@@ -51,17 +46,6 @@ public class ShopManagerScript : MonoBehaviour
         shopItems [3,2] =0;
         shopItems [3,3] =0;
         shopItems [3,4] =0;
-
-
-
-        //Sprites
-        /*
-        shopItems[4,1] = 0;
-        shopItems[4,2] = 1;
-        shopItems[4,3] = 2;
-        shopItems[4,4] = 3;
-        */
-
 
     }
 
