@@ -1,5 +1,5 @@
 # peace_was_never_an_option
-2D Endless Runner game using Unity
+2D Endless Runner game created using Unity
 
 Description:
 
